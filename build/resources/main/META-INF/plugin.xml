@@ -1,0 +1,23 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="192.5728" until-build="192.*"/>
+  <id>Alf.Alf</id>
+  <name>Alf</name>
+  <vendor email="alf@yourcompany.com" url="http://www.yourcompany.com">Envelope</vendor>
+  <description>
+    asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    </description>
+  <depends>org.jetbrains.kotlin</depends>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <group id="Alf.SampleMenu" text="_Sample Menu" description="Sample menu">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+      <action id="Alf.ToggleKeyword" class="com.lau.alf.ToggleKeyword" text="Toggle _Keyword">
+        <keyboard-shortcut first-keystroke="alt V" keymap="$default"/>
+      </action>
+    </group>
+  </actions>
+</idea-plugin>

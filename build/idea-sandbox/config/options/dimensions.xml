@@ -1,0 +1,12 @@
+<application>
+  <component name="DimensionService">
+    <location key="new project wizard.0.0.1920.1080@120dpi" x="119" y="0" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080@120dpi" x="959" y="474" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080@120dpi" x="468" y="329" />
+    <location key="#Project_Structure.0.0.1920.1080@120dpi" x="455" y="120" />
+    <location key="IDE.errors.dialog.0.0.1920.1080@120dpi" x="398" y="159" />
+    <size key="new project wizard.0.0.1920.1080@120dpi" width="1671" height="956" />
+    <size key="#Project_Structure.0.0.1920.1080@120dpi" width="1000" height="846" />
+    <size key="IDE.errors.dialog.0.0.1920.1080@120dpi" width="1123" height="832" />
+  </component>
+</application>

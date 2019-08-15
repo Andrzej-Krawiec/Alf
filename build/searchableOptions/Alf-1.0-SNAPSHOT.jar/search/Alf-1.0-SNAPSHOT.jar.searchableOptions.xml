@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<options>
+  <configurable id="preferences.keymap" configurable_name="Keymap">
+    <option name="keyword" path="ActionManager" hit="Toggle Keyword" />
+    <option name="toggle" path="ActionManager" hit="Toggle Keyword" />
+  </configurable>
+</options>
+
