@@ -23,7 +23,7 @@
         <group id="Alf.SampleMenu" text="_Sample Menu" description="Sample menu">
             <add-to-group group-id="MainMenu" anchor="last"  />
             <action id="Alf.ToggleKeyword" class="com.lau.alf.ToggleKeyword" text="Toggle _Keyword">
-                <keyboard-shortcut first-keystroke="alt V" keymap="$default"/>
+                <keyboard-shortcut first-keystroke="alt X" keymap="$default"/>
             </action>
         </group>
     </actions>

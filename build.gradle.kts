@@ -4,6 +4,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.jetbrains.intellij") version "0.4.10"
     kotlin("jvm") version "1.3.41"
+    kotlin("kapt") version "1.3.41"
 }
 
 group = "Alf"
@@ -16,6 +17,8 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("junit:junit:4.12")
+    implementation("com.google.dagger:dagger:2.24")
+    kapt("com.google.dagger:dagger-compiler:2.24")
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
@@ -29,5 +32,5 @@ tasks.getByName<org.jetbrains.intellij.tasks.PatchPluginXmlTask>("patchPluginXml
       <em>most HTML tags may be used</em>""")
 }
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "11"
 }
