@@ -2,8 +2,9 @@ package com.lau.alf.di
 
 import com.intellij.openapi.project.Project
 import com.lau.alf.CmdProcessor
-import com.lau.alf.MutabilityKeywordFactory
-import com.lau.alf.ToggleMutability
+import com.lau.alf.actions.AlfredPanelCreator
+import com.lau.alf.cmd.ToggleMutability
+import com.lau.alf.cmd.mutability.MutabilityKeywordFactory
 import dagger.Module
 import dagger.Provides
 
@@ -27,4 +28,8 @@ class AppModule(
     @Provides
     fun provideCmdProcessor(): CmdProcessor =
         CmdProcessor(project)
+
+    @Provides
+    fun provideAlfredPanelCreator(): AlfredPanelCreator =
+        AlfredPanelCreator(project)
 }

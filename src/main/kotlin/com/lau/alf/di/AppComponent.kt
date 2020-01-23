@@ -1,6 +1,7 @@
 package com.lau.alf.di
 
-import com.lau.alf.ToggleKeyword
+import com.lau.alf.actions.RunAlfredAction
+import com.lau.alf.actions.ToggleKeywordAction
 import dagger.Component
 
 @Component(
@@ -9,5 +10,6 @@ import dagger.Component
     ]
 )
 interface AppComponent {
-    fun inject(useCase: ToggleKeyword)
+    fun inject(action: ToggleKeywordAction)
+    fun inject(action: RunAlfredAction)
 }

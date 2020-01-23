@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>Alf.Alf</id>
     <name>Alf</name>
-    <vendor email="alf@yourcompany.com" url="http://www.yourcompany.com">Envelope</vendor>
+    <vendor email="alf@yourcompany.com">Envelope</vendor>
 
     <description><![CDATA[
     asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
@@ -19,13 +19,19 @@
         <!-- Add your extensions here -->
     </extensions>
 
+
     <actions>
         <group id="Alf.SampleMenu" text="_Sample Menu" description="Sample menu">
-            <add-to-group group-id="MainMenu" anchor="last"  />
-            <action id="Alf.ToggleKeyword" class="com.lau.alf.ToggleKeyword" text="Toggle _Keyword">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="Alf.ToggleKeyword" class="com.lau.alf.actions.ToggleKeywordAction" text="Toggle _Keyword">
+                <keyboard-shortcut first-keystroke="alt V" keymap="$default"/>
+            </action>
+            <action id="Alf.RunAlfred" class="com.lau.alf.actions.RunAlfredAction" text="Run _Alfred">
                 <keyboard-shortcut first-keystroke="alt X" keymap="$default"/>
             </action>
         </group>
     </actions>
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="com.lau.alf.App"/>
+    </extensions>
 </idea-plugin>
-

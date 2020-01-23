@@ -1,4 +1,4 @@
-package com.lau.alf
+package com.lau.alf.cmd.mutability
 
 import com.intellij.lang.ASTNode
 

@@ -1,6 +1,7 @@
-package com.lau.alf
+package com.lau.alf.cmd.mutability
 
 import com.intellij.lang.ASTNode
+import com.lau.alf.CmdProcessor
 
 sealed class MutabilityKeyword(val node: ASTNode) {
     fun toggle(processor: CmdProcessor) =
